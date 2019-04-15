@@ -28,7 +28,7 @@ public struct TabBarAnimate {
     public func rotation(type:RotationType) {
         switch type {
             case .left,.right:
-            let option:UIViewAnimationOptions = (type == .left) ? .transitionFlipFromLeft : .transitionFlipFromRight
+                let option:UIView.AnimationOptions = (type == .left) ? .transitionFlipFromLeft : .transitionFlipFromRight
             UIView.transition(with: self.view, duration: duration, options: option, animations: nil, completion: nil)
             case .circle:
                 self.rotaitonZ()
