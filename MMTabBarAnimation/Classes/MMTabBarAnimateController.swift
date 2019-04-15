@@ -11,6 +11,10 @@ import UIKit
 open class MMTabBarAnimateController: UITabBarController {
     var animateItems = [MMAnimateItem]()
     
+    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.initAnimateItem()
